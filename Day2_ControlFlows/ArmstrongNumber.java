@@ -6,26 +6,24 @@ public class ArmstrongNumber {
         System.out.println("Enter a number to check if it is an Armstrong number:");
         int number = sc.nextInt();
         while(number != 0 ){
-            int originalNumber = number;
+            int origNumber = number;
             int sum = 0;
             int count = 0;
-            while (originalNumber != 0) {
-                originalNumber /= 10;
+            while (origNumber != 0) {
+                origNumber /= 10;
                 count++;
             }
-            originalNumber = number;
-            while (originalNumber != 0) {
-                int digit = originalNumber % 10;
+            origNumber = number;
+            while (origNumber != 0) {
+                int digit = origNumber % 10;
                 sum += Math.pow(digit, count);
-                originalNumber /= 10;
+                origNumber /= 10;
             }
             if (sum == number) {
                 System.out.println(number + " is an Armstrong number.");
             } else {
                 System.out.println(number + " is not an Armstrong number.");
             }
-            System.out.println("Enter another number to check or -1 to exit:");
-            number = sc.nextInt();
         }
     }
 }
