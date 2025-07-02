@@ -6,5 +6,9 @@ Week -1
 * Day-5[Methods]
 
 Week-2
-* Day-1[Workshop]
+* Day-1[Class-Objects] OOPs
+* Day-2[Static-Final] OOPs
+* Day-3[Object-Oriented-Design-Principle] OOPs
+* Day-4[Workshop]
+
   
